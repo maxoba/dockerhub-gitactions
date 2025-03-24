@@ -21,7 +21,7 @@ EOF
 
 RUN <<EOF
 addgroup -s docker
-adduser -s --shell /bin/bash --ingroup docker vscode
+adduser -s --shell bash --ingroup docker vscode
 EOF
 
 COPY --from=gloursdocker/docker / /
